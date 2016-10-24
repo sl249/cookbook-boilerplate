@@ -8,18 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./cookbook-item.component.css']
 })
 export class CookbookItemComponent implements OnInit {
-  @Input() cookbook: Cookbook;
 
   constructor(
-    private router: Router
   ) { }
 
   ngOnInit() {
 
-  }
-
-  viewCookbook() {
-    this.router.navigate(['/cookbooks', this.cookbook.id]);
   }
 
 }

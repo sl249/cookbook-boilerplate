@@ -10,24 +10,11 @@ import { Cookbook } from './cookbook-item/cookbook'
   providers: [CookbookService]
 })
 export class CookbooksComponent implements OnInit {
-
   constructor(
-    private cookbookService: CookbookService,
   ) { }
 
-  searchText: string;
-
   ngOnInit() {
-    this.cookbookService
-        .getCookbooks()
-        .then(cookbooks => this.cookbooks = cookbooks);
-        
-  }
-  
-  updateSearch(event) {
-    this.searchText = event.value;
-  }
 
-  cookbooks: Cookbook[];
+  }
 
 }
